@@ -51,10 +51,18 @@
             <version>${mybatis-plus.version}</version>
         </dependency>
 
-        <!--mysql-->
+        <!-- SQlite -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.25.2</version>
+        </dependency>
+
+        <!-- poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.0.0</version>
         </dependency>
 
         <!-- kotlin -->

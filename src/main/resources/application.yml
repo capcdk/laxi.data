@@ -9,10 +9,8 @@ spring:
       max-file-size: 50MB
       max-request-size: 50MB
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: cdk123456
-    url: jdbc:mysql://192.168.99.100:32770/mydb?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite::resource:data/laxi.db
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       connection-timeout: 12000
