@@ -1,0 +1,32 @@
+spring:
+  http:
+    encoding:
+      enabled: true
+      charset: utf-8
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: cdk123456
+    url: jdbc:mysql://192.168.99.100:32770/mydb?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      connection-timeout: 12000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      connection-test-query: select 1
+      validation-timeout: 5000
+      minimum-idle: 5
+      maximum-pool-size: 10
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    deserialization:
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+    default-property-inclusion: non_null
+    time-zone: GMT+8
+  mvc:
+    date-format: yyyy-MM-dd HH:mm:ss
